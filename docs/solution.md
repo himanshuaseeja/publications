@@ -27,11 +27,13 @@ The edge model monitors "Golden Signals" (Latency, Errors, Traffic, Saturation).
 
 ### The Hybrid Approach to Trace Sampling
 While edge processing offers speed, it is limited to span-level analysis. To solve this, we propose a Hybrid Framework that bridges the gap between local speed and global context.
-A. Structural Anomaly Sampling (Intra-Span)
+
+1. Structural Anomaly Sampling (Intra-Span)
 Focuses on deviations within the metadata of individual spans, identifying localized resource exhaustion.
 * Adaptive Z-Score: Computes a running mean and standard deviation. A trace is sampled if any span duration $D$ exceeds $D > \mu + k\sigma$.
 * Attribute "Newness": Uses Bloom filters to identify unseen error codes or unique exception tags, forcing a 100% sampling rate for novel events.
-B. Topological Anomaly Sampling (Inter-Span)
+
+2. Topological Anomaly Sampling (Inter-Span)
 Detects changes in the "call graph"—how services interact.
 * Causal Graph Sketching: Uses lightweight hashes of parent-child relationships (e.g., $A \rightarrow B \rightarrow C$). If a request bypasses a service ($A \rightarrow C$), it is flagged as a mutation.
 * GNN Latent Representation: Encodes the trace tree into a vector. A trace is sampled if the distance between its vector and the "Normal Cluster" centroid exceeds a predefined $\epsilon$.
