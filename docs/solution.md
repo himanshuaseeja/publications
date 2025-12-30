@@ -28,7 +28,7 @@ The edge model monitors "Golden Signals" (Latency, Errors, Traffic, Saturation).
 * Anomaly State: Streams high-fidelity raw data only during detected deviations.
 
 ### The Hybrid Approach to Trace Sampling
-While edge processing offers speed, it is limited to span-level analysis. To solve this, we propose a Hybrid Framework that bridges the gap between local speed and global context.
+While edge processing offers speed, it is limited to span-level analysis. To solve this, I propose a Hybrid Framework that bridges the gap between local speed and global context.
 
 1. Structural Anomaly Sampling (Intra-Span)
 Focuses on deviations within the metadata of individual spans, identifying localized resource exhaustion.
