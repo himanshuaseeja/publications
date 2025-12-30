@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="assets/custom.css">
+
 # Proposed Solution
 
 ## Edge-Based Inference
