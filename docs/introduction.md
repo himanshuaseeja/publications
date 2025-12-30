@@ -1,18 +1,18 @@
 # The Intelligent Edge: Decentralizing Anomaly Detection in High-Volume Observability Pipelines
 
 ## Background
-As distributed systems scale, the volume of telemetry data — metrics, logs, and traces — is outstripping the growth of infrastructure budgets. The cost of identifying the anomalies in the telemetry data is huge when perfomed at scale.
+As distributed systems grow in scale and complexity, the volume of telemetry data—metrics, logs, and traces—continues to rise exponentially. Traditional infrastructure budgets cannot keep pace. Identifying anomalies within this data becomes increasingly expensive when performed centrally and at scale.
 
 ## Purpose of This White Paper
-This paper proposes a Hybrid Observability Framework: moving anomaly detection to the edge. By hosting lightweight ML models locally within collectors or sidecars, organizations can detect incidents in real-time, reduce egress costs, and prioritize critical data. This approach is complemented by a centralized tier for deep contextual analysis, ensuring both immediacy and holistic visibility.
+This paper proposes a Hybrid Observability Framework that shifts anomaly detection to the edge. By deploying lightweight ML models within collectors or sidecars, organizations can detect incidents in real time, reduce egress and storage costs, and prioritize only the most meaningful data. A centralized analytics tier complements this approach by providing deep contextual correlation and long-term visibility.
 
 ## Who This Paper Is For
-This paper is for observability architects, developers and SRE who are interested in optimizing the telemetry pipelines by introducing the intelligence at the edge.
+This paper is intended for observability architects, developers, and SREs seeking to optimize telemetry pipelines by introducing intelligence at the edge.
 
 ## Overview of the Problem
-Traditional centralized observability models, which ingest all data before performing analysis, create significant "data gravity" and cost bottlenecks. By moving the anomaly detection at the edge, a lot of ingestion processing cost can be saved.
+Centralized observability architectures ingest all telemetry before performing analysis, creating significant data‑gravity challenges and cost bottlenecks. Moving anomaly detection to the edge reduces ingestion volume, lowers processing costs, and enables faster detection of critical events.
 
 ## What Comes Next
-* Problem Statement
-* Proposed Solution with a conceptual architecture
+* Problem Statement  
+* Proposed Solution with Conceptual Architecture  
 * Conclusion
