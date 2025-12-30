@@ -1,4 +1,4 @@
-##The Problem Statement: The Observability Tax
+# The Problem Statement: The Observability Tax
 Modern observability faces a paradox: more data is required for reliability, yet the cost of transporting and storing that data often exceeds the value of the insights gained.
 
 * Latency of Insight: Centralized pipelines introduce a lag between data generation and anomaly detection, increasing Mean Time to Detect (MTTD) and hence increased Mean Time to Resolve(MTTR).
