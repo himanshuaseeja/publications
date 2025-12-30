@@ -1,3 +1,3 @@
 --- 
-title: The Intelligent Edge: Decentralizing Anomaly Detection in High-Volume Observability Pipelines 
+title: The Intelligent Edge - Decentralizing Anomaly Detection in High-Volume Observability Pipelines 
 --- 
