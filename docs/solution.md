@@ -8,3 +8,13 @@ I propose integrating an Inference Engine directly into the telemetry collection
 * The Model: A lightweight algorithm (e.g., Random Cut Forest, Isolation Forest, or Autoencoder) optimized for the edge. 
 * The Policy Engine: Executes actions based on inference (e.g., "If anomaly score $> 0.8$, bypass sampling and retain 100% of related spans").
 
+## Implementation Strategies: Hosting Patterns
+Architects must choose between two primary hosting patterns based on their resource constraints and complexity requirements:
+
+| Feature  | Local(In-Process) | Remote (Sidecar/Gateway) |
+| ------------- | ------------- | ------------------------ |
+| Hosting | Model runs inside the collector (e.g., WASM in OTel) | Model runs in a dedicated container on the same node | 
+| Performance | Near-zero network overhead; minimal latency | Higher resource ceiling; protects collector stability |
+| Complexity | High (WASM/Go integration) | Low (Standard REST/gRPC interfaces) |
+| Best Use Case | Simple metric thresholding and trend shifts, span analysis | Complex trace patterns and multi-metric correlation |
+
