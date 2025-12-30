@@ -1,4 +1,4 @@
-# The Intelligent Edge: Decentralizing Anomaly Detection in High-Volume Observability Pipelines
+# Introduction
 
 ## Background
 As distributed systems grow in scale and complexity, the volume of telemetry data—metrics, logs, and traces—continues to rise exponentially. Traditional infrastructure budgets cannot keep pace. Identifying anomalies within this data becomes increasingly expensive when performed centrally and at scale.
