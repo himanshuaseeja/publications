@@ -1,1 +1,1 @@
-This space is to store the paper publications.
+--- title: The Intelligent Edge: Decentralizing Anomaly Detection in High-Volume Observability Pipelines --- 
