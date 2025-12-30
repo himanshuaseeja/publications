@@ -20,6 +20,9 @@ Architects must choose between two primary hosting patterns based on their resou
 | Complexity | High (WASM/Go integration) | Low (Standard REST/gRPC interfaces) |
 | Best Use Case | Simple metric thresholding and trend shifts, span analysis | Complex trace patterns and multi-metric correlation |
 
+## Architecture Diagram
+![Hybrid View - Edge and Centralized Processing](images/hybrid_view.png)
+
 ## Technical Deep-Dive: Metrics vs. Traces
 
 ### Anomaly Detection for Metrics
