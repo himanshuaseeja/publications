@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="assets/custom.css">
+
 # The Problem Statement: The Observability Tax
 Modern observability faces a paradox: more data is required for reliability, yet the cost of transporting and storing that data often exceeds the value of the insights gained.
 
