@@ -38,4 +38,12 @@ Detects changes in the "call graph"—how services interact.
 * Causal Graph Sketching: Uses lightweight hashes of parent-child relationships (e.g., $A \rightarrow B \rightarrow C$). If a request bypasses a service ($A \rightarrow C$), it is flagged as a mutation.
 * GNN Latent Representation: Encodes the trace tree into a vector. A trace is sampled if the distance between its vector and the "Normal Cluster" centroid exceeds a predefined $\epsilon$.
 
+## Challenges and Mitigation
+
+### The Model Drift Challenge: Edge models can become "stale" as application code changes.
+- Solution: Implement a Federated Learning loop. The central backend retrains models using the "Anomaly Store" and pushes updated weights/filters back to the edge collectors.
+
+### The Resource Contention Challenge: Observability agents must not starve the primary application.
+- Solution: Leverage WebAssembly (WASM) for sandboxed, resource-constrained execution of models with strict CPU/Memory limits.
+
 
